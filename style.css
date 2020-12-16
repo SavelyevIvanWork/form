@@ -1,0 +1,32 @@
+.form {
+    display: flex;
+    align-items: flex-start;
+    width: 30%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 30px;
+    background-color: #423445;
+  }
+
+  .wrapper {
+      width: 50%;
+  }
+  
+  .input {
+    margin-bottom: 20px;
+  }
+  
+  .input[placeholder] {
+    text-align: center;
+  }
+
+  .input--even[placeholder] {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .button {
+    margin: 0 auto;
+    align-self: center;
+  }
