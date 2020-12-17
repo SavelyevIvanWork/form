@@ -1,4 +1,3 @@
-let form = document.querySelector('.form');
 let wrapper = document.querySelector('.wrapper');
 let input = document.querySelector('.input');
 let button = document.querySelector('.button');
@@ -11,10 +10,15 @@ function createNewElement() {
         if (inputArr.length % 2 !== 0) {
             inputNew.classList.add('input--even');
         }
-            
-            wrapper.appendChild(inputNew);
-    } 
-}
+
+        console.log(wrapper.lastChild)
+        
+        if (wrapper.lastChild.value == '555') {
+            inputNew.value = '---';
+        }
+        wrapper.appendChild(inputNew);
+    }
+} 
 
 function buttonClickHandler(event) {
     event.preventDefault()
@@ -22,4 +26,3 @@ function buttonClickHandler(event) {
 }
 
 button.addEventListener('click', buttonClickHandler);
-
