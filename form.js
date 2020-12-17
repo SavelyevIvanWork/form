@@ -10,10 +10,8 @@ function createNewElement() {
         if (inputArr.length % 2 !== 0) {
             inputNew.classList.add('input--even');
         }
-
-        console.log(wrapper.lastChild)
-        
-        if (wrapper.lastChild.value == '555') {
+        console.log(wrapper.lastElementChild.value);
+        if (wrapper.lastElementChild.value === '555') {
             inputNew.value = '---';
         }
         wrapper.appendChild(inputNew);
