@@ -11,7 +11,7 @@ function createNewElement() {
             inputNew.classList.add('input--even');
         }
         console.log(wrapper.lastElementChild.value);
-        if (wrapper.lastElementChild.value === '555') {
+        if (wrapper.lastElementChild.value.indexOf("555") !== -1) {
             inputNew.value = '---';
         }
         wrapper.appendChild(inputNew);
